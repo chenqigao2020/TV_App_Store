@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/backImageView"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:background="@drawable/shape_user3_focus"
+        android:scaleType="fitXY"
+        android:src="@drawable/back"
+        android:focusable="true"
+        android:layout_width="@dimen/icon_size_default"
+        android:layout_height="@dimen/icon_size_default"/>
+
+    <FrameLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:paddingLeft="@dimen/margin"
+                    android:paddingRight="@dimen/margin"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/margin"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/appImageView"
+                            android:layout_width="@dimen/icon_size_plus"
+                            android:layout_height="@dimen/icon_size_plus" />
+
+                        <LinearLayout
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="@dimen/margin"
+                            android:orientation="vertical"
+                            android:layout_weight="1000"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/nameTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="QQ"
+                                android:textColor="#ffffffff"
+                                android:textSize="@dimen/text_size_plus" />
+
+                            <TextView
+                                android:id="@+id/infoTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="QQ"
+                                android:textColor="#ffffffff"
+                                android:textSize="@dimen/text_size_default" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/openButton"
+                            android:layout_gravity="bottom"
+                            style="@style/Button"
+                            android:text="打开" />
+
+                        <Button
+                            android:id="@+id/installButton"
+                            android:layout_marginLeft="@dimen/margin"
+                            android:layout_gravity="bottom"
+                            style="@style/Button"
+                            android:text="下载" />
+
+                        <Button
+                            android:id="@+id/uninstallButton"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="@dimen/margin"
+                            style="@style/Button"
+                            android:text="卸载"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contentLayout"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/home_margin_lr"
+    android:paddingRight="@dimen/home_margin_lr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:paddingTop="@dimen/margin"
+        android:paddingBottom="@dimen/margin"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="2.1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="@dimen/home_find_menu_width"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/rankingButton"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:focusable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@drawable/find_ranking_bg">
+
+                    <ImageView
+                        android:src="@drawable/find_ranking"
+                        android:layout_width="@dimen/icon_size_default"
+                        android:layout_height="@dimen/icon_size_default"/>
+
+                    <TextView
+                        android:layout_marginTop="@dimen/margin"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/text_size_default"
+                        android:text="排行榜"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.app.ui.home.node.find.view.AppRecyclerView
+                android:id="@+id/appListView"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:id="@+id/recommendButton"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:focusable="true"
+                android:layout_width="@dimen/home_find_menu_width"
+                android:layout_height="match_parent"
+                android:background="@drawable/find_recommend_bg">
+
+                <ImageView
+                    android:src="@drawable/find_recommend"
+                    android:layout_width="@dimen/icon_size_default"
+                    android:layout_height="@dimen/icon_size_default"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/margin"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/text_size_default"
+                    android:text="装机必备"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <com.app.ui.home.node.find.view.AppRecyclerView
+                android:id="@+id/minAppListView"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

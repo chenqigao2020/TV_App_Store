@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/ranking_item_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="@dimen/margin"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/classifyTextView"
+            android:textColor="#ffffff"
+            android:text="影音排行榜"
+            android:textSize="@dimen/text_size_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/listLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/appLayout0"
+            layout="@layout/ranking_item_view_item_first"/>
+
+        <include
+            android:id="@+id/appLayout1"
+            layout="@layout/ranking_item_view_item"/>
+
+        <include
+            android:id="@+id/appLayout2"
+            layout="@layout/ranking_item_view_item"/>
+
+        <include
+            android:id="@+id/appLayout3"
+            layout="@layout/ranking_item_view_item"/>
+
+        <include
+            android:id="@+id/appLayout4"
+            layout="@layout/ranking_item_view_item"/>
+
+    </LinearLayout>
+
+</LinearLayout>

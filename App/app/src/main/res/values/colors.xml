@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="layer_bg">#20000000</color>
+
+    <color name="focused">#0165DE</color>
+
+    <color name="focused_frame">#ffffff</color>
+
+    <color name="tab_select_bg">#44000000</color>
+
+    <color name="tips_text">#50ffffff</color>
+
+    <color name="button">#43A047</color>
+
+</resources>

@@ -1,0 +1,4 @@
+include ':app'
+include ':crash'
+include ':devFloatUtils'
+include ':adaptation'

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:focusable="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/selectLayout"
+        android:background="@drawable/home_tab_select_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:paddingTop="@dimen/home_tab_padding_tb"
+            android:paddingBottom="@dimen/home_tab_padding_tb"
+            android:paddingLeft="@dimen/home_tab_padding_lr"
+            android:paddingRight="@dimen/home_tab_padding_lr"
+            android:background="@drawable/home_tab_bg"
+            android:focusable="true"
+            android:text="666"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

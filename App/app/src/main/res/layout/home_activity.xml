@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/home_margin_t"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:paddingLeft="@dimen/home_margin_lr"
+        android:paddingRight="@dimen/home_margin_lr"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <com.app.ui.home.view.NoticeTextView
+                android:id="@+id/noticeTextView"
+                android:text="公告"
+                android:focusable="true"
+                android:background="@drawable/home_notice_bg"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_default"
+                android:paddingTop="@dimen/home_notice_padding"
+                android:paddingBottom="@dimen/home_notice_padding"
+                android:paddingLeft="@dimen/margin"
+                android:paddingRight="@dimen/margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/timeTextView"
+            android:layout_marginLeft="@dimen/margin"
+            android:text="17:36"
+            android:textColor="#BBffffff"
+            android:textSize="@dimen/text_size_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_margin="@dimen/margin"
+            android:background="#50ffffff"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:text="@string/app_name"
+            android:textColor="@color/tips_text"
+            android:textSize="@dimen/text_size_plus"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_centerInParent="true"
+        android:background="@drawable/in_share_code_edit_bg"
+        android:textColor="#000000"
+        android:hint="点击键盘输入"
+        android:textColorHint="#44000000"
+        android:ellipsize="start"
+        android:singleLine="true"
+        android:gravity="center"
+        android:padding="@dimen/margin"
+        android:textSize="@dimen/text_size_default"
+        android:layout_width="@dimen/share_code_edit_width"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_toRightOf="@id/textView"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin"
+        style="@style/Button"
+        android:text="确定" />
+
+</RelativeLayout>

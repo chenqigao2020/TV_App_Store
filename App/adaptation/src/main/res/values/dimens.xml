@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 参考设备屏幕参数：雷电模拟器 1280x720 240dpi 480dp -->
+    <!-- 设备屏幕的最短边的总dp = 设备屏幕的最短边 / ( dpi / 160 )，示例：720 / ( 240 / 160 ) = 480dp，因此会选中sw480dp文件夹 -->
+
+    <dimen name="text_size_min">10dp</dimen>
+
+    <dimen name="text_size_default">15dp</dimen>
+
+    <dimen name="text_size_plus">22dp</dimen>
+
+    <dimen name="text_size_max">30dp</dimen>
+
+    <dimen name="icon_size_min">40dp</dimen>
+
+    <dimen name="icon_size_default">50dp</dimen>
+
+    <dimen name="icon_size_plus">90dp</dimen>
+
+    <dimen name="icon_size_max">150dp</dimen>
+
+    <dimen name="pics_size_width">300dp</dimen>
+
+    <dimen name="pics_size_height">150dp</dimen>
+
+    <dimen name="home_margin_lr">35dp</dimen>
+
+    <dimen name="home_margin_t">15dp</dimen>
+
+    <dimen name="home_notice_corners">100dp</dimen>
+
+    <dimen name="home_notice_padding">5dp</dimen>
+
+    <dimen name="home_tab_padding_lr">18dp</dimen>
+
+    <dimen name="home_tab_padding_tb">6dp</dimen>
+
+    <dimen name="home_find_menu_width">128dp</dimen>
+
+    <dimen name="ranking_item_width">215dp</dimen>
+
+    <dimen name="share_code_edit_width">300dp</dimen>
+
+    <dimen name="share_code_key_width">80dp</dimen>
+
+    <dimen name="button_min_width">80dp</dimen>
+
+    <dimen name="flag_padding_lr">10dp</dimen>
+
+    <dimen name="flag_padding_tb">4dp</dimen>
+
+    <dimen name="line">1dp</dimen>
+
+    <dimen name="margin">10dp</dimen>
+
+    <dimen name="corners">10dp</dimen>
+
+</resources>

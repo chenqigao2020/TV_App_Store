@@ -1,0 +1,49 @@
+！！！注意：MMM_MMM选项无论是使用ip+端口还是域名，都必须要带有端口号。
+
+示例一：
+
+{
+	"MMM_MMM":"http://127.0.0.1:80",
+	"APP_ID":"10000",
+	"API_KEY":"814917cc539e3a33fcdad26a670f6666"
+}
+
+示例二：
+
+{
+	"MMM_MMM":"https://127.0.0.1:443",
+	"APP_ID":"10000",
+	"API_KEY":"814917cc539e3a33fcdad26a670f6666"
+}
+
+示例三：
+
+{
+	"MMM_MMM":"https://127.0.0.1:****",
+	"APP_ID":"10000",
+	"API_KEY":"814917cc539e3a33fcdad26a670f6666"
+}
+
+示例四：
+
+{
+	"MMM_MMM":"http://www.baidu.com:80",
+	"APP_ID":"10000",
+	"API_KEY":"814917cc539e3a33fcdad26a670f6666"
+}
+
+示例五：
+
+{
+	"MMM_MMM":"https://www.baidu.com:443",
+	"APP_ID":"10000",
+	"API_KEY":"814917cc539e3a33fcdad26a670f6666"
+}
+
+示例六：
+
+{
+	"MMM_MMM":"https://www.baidu.com:****",
+	"APP_ID":"10000",
+	"API_KEY":"814917cc539e3a33fcdad26a670f6666"
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_user3_focus"
+    android:focusable="true">
+
+    <FrameLayout
+        android:background="@drawable/app_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="@dimen/margin"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivApps"
+                android:layout_width="@dimen/icon_size_default"
+                android:layout_height="@dimen/icon_size_default"/>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/appName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:text="App 名字"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_default" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/delFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_user_delete"
+            android:layout_gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/icon_size_default"
+                android:layout_height="@dimen/icon_size_default"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_delete" />
+        </FrameLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

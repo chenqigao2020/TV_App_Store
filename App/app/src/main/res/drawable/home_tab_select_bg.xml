@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_selected="false">
+
+        <shape>
+
+
+
+        </shape>
+
+    </item>
+
+    <item android:state_selected="true">
+
+        <shape>
+
+            <solid android:color="@color/tab_select_bg"/>
+            <corners android:radius="@dimen/home_notice_corners"/>
+
+        </shape>
+
+    </item>
+
+</selector>
